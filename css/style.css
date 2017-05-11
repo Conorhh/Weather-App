@@ -1,0 +1,693 @@
+body{
+	
+	border: 20px solid #fff;
+	background: rgba(133,255,255,1);
+background: -moz-linear-gradient(left, rgba(133,255,255,1) 0%, rgba(57,141,201,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(133,255,255,1)), color-stop(100%, rgba(57,141,201,1)));
+background: -webkit-linear-gradient(left, rgba(133,255,255,1) 0%, rgba(57,141,201,1) 100%);
+background: -o-linear-gradient(left, rgba(133,255,255,1) 0%, rgba(57,141,201,1) 100%);
+background: -ms-linear-gradient(left, rgba(133,255,255,1) 0%, rgba(57,141,201,1) 100%);
+background: linear-gradient(to right, rgba(133,255,255,1) 0%, rgba(57,141,201,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85ffff', endColorstr='#398dc9', GradientType=1 );
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.weather_app{
+	height: 87vh;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#icon{
+    width: 250px;
+}
+
+.icon_weather{
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 25%;
+}
+
+.temp_cluster{
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	margin: 10%;
+    animation-delay: 0.2s;
+}
+
+
+
+.location{
+	font-weight: 300;
+	font-size: 2.5em;
+	padding-bottom: 10px;
+	text-align: center;
+	width: 100%;
+}
+.tempreture{
+	font-weight: 400;
+	font-size: 11em;
+	text-shadow: 0px 0px 17px rgba(255, 255, 255, 0.48);
+}
+
+.description{
+	font-weight: 300;
+	font-size: 1.5em;
+	padding-top: 20px
+	
+}
+
+
+
+
+
+.wind_cluster{
+	display: flex;
+	align-items:center;
+	justify-content: space-around;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.3em;
+	width: 45%;
+    animation-delay: 0.6s;
+	
+}
+
+
+#wind{
+    height: 100px;
+}
+
+#humidity{
+    height: 100px;
+}
+
+
+.wind_sep{
+	border-left:thin white solid;
+	height:60px;
+	padding-left: 5px;
+	padding-right: 25px;
+	opacity: 0.5;
+}
+
+
+.search{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	height: 20%;
+     animation-delay: 1s;
+	
+}
+
+
+#my_form{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #CCCCCC;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #CCCCCC;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #CCCCCC;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #CCCCCC;
+}
+
+
+
+.find_forecast{
+	margin-top: 10px;
+	border-radius:10px; 
+	padding: 11px;
+	border: none;
+	color: #828282;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.2em;
+	-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.12);
+-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.12);
+box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.12);
+
+}
+
+
+
+button:focus {
+	outline:0;
+}
+
+
+.btn_search{
+	
+	border-radius:10px;
+	margin-top: 40px;
+	width: 30%;
+	align-self: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	
+	border: none;
+	text-decoration: none;
+	padding-bottom: 33px;
+
+	-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.12);
+	-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.12);
+	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.12);	
+	
+	background: rgba(168,251,252,1);
+background: -moz-linear-gradient(left, rgba(168,251,252,1) 0%, rgba(0,200,255,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(168,251,252,1)), color-stop(100%, rgba(0,200,255,1)));
+background: -webkit-linear-gradient(left, rgba(168,251,252,1) 0%, rgba(0,200,255,1) 100%);
+background: -o-linear-gradient(left, rgba(168,251,252,1) 0%, rgba(0,200,255,1) 100%);
+background: -ms-linear-gradient(left, rgba(168,251,252,1) 0%, rgba(0,200,255,1) 100%);
+background: linear-gradient(to right, rgba(168,251,252,1) 0%, rgba(0,200,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8fbfc', endColorstr='#00c8ff', GradientType=1 );
+	
+	
+}
+
+#logo{
+    
+    height: 100px;
+}
+
+.logo{
+	margin-top: 10px;
+	height: 10%;
+     animation-delay: 1.5s;
+}
+
+
+.line_serperator_body{
+opacity: 0.5;
+height:1px;
+background:#fff;
+border-bottom:1px solid #fff;
+width:110%;
+margin-top: -7%;
+
+
+	
+}
+
+.line_serperator_body_top{
+opacity: 0.5;
+height:1px;
+background:#fff;
+border-bottom:1px solid #fff;
+width:110%;
+margin-bottom: -10%;
+	margin-top: 5%;
+
+	
+}
+
+
+
+
+/*Media Queries*/
+
+/*Macbook Pro Retina*/
+
+@media screen and (min-width: 2560px){
+
+    
+    #icon{
+      width: 500px;  
+    }
+    
+    .location{
+	font-size: 4em;
+	padding-bottom: 0px;
+    padding-top:200px;
+
+    }
+    
+    .tempreture{
+        font-size: 20em;
+    }
+
+    .description{
+        font-size: 4em;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+    
+    
+    
+    #wind{
+        height: 200px;
+    }
+
+    #humidity{
+        height: 200px;
+    }
+
+
+    .wind_cluster{
+        font-size: 2.3em;
+        width: 45%;
+
+    }
+    
+    
+    .find_forecast{
+	margin-top: 10px;
+	padding: 20px;
+	font-size: 2em;
+
+    }
+    
+    
+    .btn_search{
+	
+	margin-top: 40px;
+	width: 30%;
+	font-size: 2em;
+	border: none;
+	text-decoration: none;
+	padding-bottom: 20px;
+    padding-top: 15px;
+	
+	
+    }
+
+    #logo{
+        height: 150px;
+    }
+
+
+
+} /*END OF MEDIA QUERIES FOR MAC BOOK PRO*/
+
+
+    
+/*Ipad Landscape*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+    and (orientation : landscape){
+        
+        
+        .icon_weather{
+margin-top: 10px;
+}
+        
+        
+           #icon{
+      width: 200px;  
+    
+
+    }
+    
+    .location{
+	font-size: 2em;
+	padding-bottom: 0px;
+    padding-top:100px;
+
+    }
+    
+    .tempreture{
+        font-size: 10em;
+    }
+
+    .description{
+        font-size: 2em;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 150px;
+    }
+    
+    
+    
+    #wind{
+        height: 60px;
+    }
+
+    #humidity{
+        height: 60px;
+    }
+
+
+    .wind_cluster{
+        font-size: 1em;
+
+
+    }
+    
+    
+    .find_forecast{
+	margin-top: 10px;
+	padding: 5px;
+	font-size: 1.4em;
+
+    }
+    
+    
+    .btn_search{
+	
+	margin-top: 40px;
+	width: 30%;
+	font-size: 1em;
+	border: none;
+	text-decoration: none;
+	padding-bottom: 0px;
+    padding-top: 0px;
+	
+	
+    }
+
+    #logo{
+        height: 80px;
+    }
+        
+}
+
+
+
+/*Ipad Portrait*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+        
+        
+            .icon_weather{
+margin-top: 10px;
+}
+        
+        
+           #icon{
+      width: 600px;  
+    
+
+    }
+    
+    .location{
+	font-size: 3em;
+	padding-bottom: 0px;
+    padding-top:100px;
+
+    }
+    
+    .tempreture{
+        font-size: 15em;
+    }
+
+    .description{
+        font-size: 3em;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 150px;
+    }
+    
+    
+    
+    #wind{
+        height: 120px;
+    }
+
+    #humidity{
+        height: 120px;
+    }
+
+
+    .wind_cluster{
+        font-size: 2em;
+
+
+    }
+    
+    
+    .find_forecast{
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 2em;
+
+    }
+    
+    
+    .search{
+	
+	width: 100%;
+	height: 20%;
+     
+	
+    }
+
+
+    
+    .btn_search{
+	
+	margin-top: 40px;
+	width: 50%;
+	font-size: 2em;
+	border: none;
+	text-decoration: none;
+	padding-bottom: 0px;
+    padding-top: 0px;
+	
+	
+    }
+
+    #logo{
+        height: 180px;
+    }
+}
+
+
+/*Iphone 6 Portrait*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait){
+    
+    
+    
+ .weather_app{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}   
+        
+    
+            .icon_weather{
+    margin-top: 10px;
+    width: 100%;
+    }
+        
+        
+           #icon{
+      width: 600px;  
+    
+
+    }
+    
+    .location{
+	font-size: 4em;
+	padding-bottom: 0px;
+    padding-top:100px;
+
+    }
+    
+    .tempreture{
+        font-size: 20em;
+    }
+
+    .description{
+        font-size: 4em;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 150px;
+    }
+    
+    
+    
+    #wind{
+        height: 220x;
+    }
+
+    #humidity{
+        height: 220px;
+    }
+
+
+    .wind_cluster{
+        font-size: 3em;
+
+
+    }
+    
+    
+    .find_forecast{
+	margin-top: 10px;
+	padding: 15px;
+	font-size: 3em;
+
+    }
+    
+    
+    .search{
+	
+	width: 100%;
+	height: 20%;
+     
+	
+    }
+
+
+    
+    .btn_search{
+	
+	margin-top: 40px;
+	width: 50%;
+	font-size: 3em;
+	border: none;
+	text-decoration: none;
+	padding-bottom: 0px;
+    padding-top: 0px;
+	
+	
+    }
+
+    #logo{
+        height: 180px;
+    }
+        
+}
+
+
+
+
+/*Iphone 6 Landscape*/
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+    and (orientation : landscape){
+        
+        .weather_app{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}   
+        
+    
+            .icon_weather{
+    margin-top: 10px;
+    width: 100%;
+    }
+        
+        
+           #icon{
+      width: 200px;  
+    
+
+    }
+    
+    .location{
+	font-size: 1.4em;
+	padding-bottom: 0px;
+    padding-top:40px;
+
+    }
+    
+    .tempreture{
+        font-size:7em;
+    }
+
+    .description{
+        font-size: 1.4em;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 40px;
+    }
+    
+    
+    
+    #wind{
+        height: 50px;
+    }
+
+    #humidity{
+        height: 50px;
+    }
+
+
+    .wind_cluster{
+        font-size: 1.4em;
+        padding-bottom: 40px;
+        padding-top: 20px;
+
+
+    }
+    
+    
+    .find_forecast{
+	margin-top: 10px;
+	padding: 5px;
+	font-size: 1.4em;
+
+    }
+    
+    
+    .search{
+	
+	width: 100%;
+	height: 20%;
+     
+	
+    }
+    
+    .btn_search{
+
+	
+	
+    }
+
+    #logo{
+        display:none;
+    }
+       
+        
+        
+        
+}
+
